@@ -27,12 +27,11 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 int num=Integer.parseInt(numbers.getText().toString());
-                num++;
-                numbers.setText(""+num);
+                numbers.setText(String.valueOf(++num));
             }
         });
     }
-    public void zero(View view){
+    public void setZero(View view){
         numbers.setText("0");
     }
 
